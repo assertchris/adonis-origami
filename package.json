@@ -1,0 +1,13 @@
+{
+  "name": "adonis-origami",
+  "version": "1.0.0",
+  "description": "Folding with style",
+  "license": "MIT",
+  "dependencies": {
+    "adonis-fold": "^2.0.1",
+    "app-root-path": "^1.0.0"
+  },
+  "autoload": {
+    "Origami/Tests": "tests"
+  }
+}

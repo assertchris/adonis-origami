@@ -13,10 +13,32 @@ Add autoload directives to `package.json`:
 }
 ```
 
-On their own, these directives do nothing. You can create a Fold-like container, like this:
+You can create a Fold-like container, like this:
 
 ```js
-var container = new require("adonis-origami");
+var container = new (require(path + "/index"));
+```
+
+Thanks to the `package.json` autoload directives, code files can be autoloaded:
+
+```js
+var model = container.make("App/Model");
+```
+
+Ad-hoc bindings can also be created:
+
+```js
+container.bind("Foo/Bar", function() {
+    return new SomeClass();
+});
+```
+
+Autoloaded files, and ad-hoc bindings, can be extended:
+
+```js
+container.extend("App/Model", function(Model) {
+    return new ModelDecorator(container.make(Model));
+});
 ```
 
 ## Versioning

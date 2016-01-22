@@ -16,7 +16,7 @@ Add autoload directives to `package.json`:
 You can create a Fold-like container, like this:
 
 ```js
-var container = new (require(path + "/index"));
+var container = new (require("adonis-origami"));
 ```
 
 Thanks to the `package.json` autoload directives, code files can be autoloaded:

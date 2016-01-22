@@ -4,6 +4,12 @@ Folding with style. This is an experimental take on improvements to Fold's API.
 
 ## Usage
 
+Install this package directly (since it's still experimental and not on NPM):
+
+```sh
+$ npm install --save git://git@github.com:assertchris/adonis-origami.git
+```
+
 Add autoload directives to `package.json`:
 
 ```js

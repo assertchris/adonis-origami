@@ -23,6 +23,7 @@ Thanks to the `package.json` autoload directives, code files can be autoloaded:
 
 ```js
 var model = container.make("App/Model");
+// this will create an instance of whatever src/Model.js assigns to module.exports
 ```
 
 Ad-hoc bindings can also be created:

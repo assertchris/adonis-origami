@@ -42,6 +42,8 @@ container.extend("App/Model", function(Model) {
 });
 ```
 
+You can learn more about Fold at [here](https://medium.com/p/effortless-javascript-modules-f6c1059d11d4).
+
 ## Versioning
 
 This library follows [Semver](http://semver.org). According to Semver, you will be able to upgrade to any minor or patch version of this library without any breaking changes to the public API. Semver also requires that we clearly define the public API for this library.

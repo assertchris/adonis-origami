@@ -3,9 +3,6 @@ function Container() {
     var path = require("app-root-path");
     var config = require(path + "/package.json");
 
-    GLOBAL.use = this.prototype.use;
-    GLOBAL.make = this.prototype.make;
-
     if (config.autoload) {
         for (var key in config.autoload) {
             if (config.autoload.hasOwnProperty(key)) {
